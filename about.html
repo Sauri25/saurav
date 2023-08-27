@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+        }
+
+
+        ul {
+            background-color: rgba(0, 0, 0, 0.212);
+            height: 15vh;
+            list-style: none;
+        }
+
+        nav {
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+            box-shadow: inset 2px -3px 10px red;
+
+        }
+
+
+        .Saurav {
+            font-size: 13vh;
+            font-style: italic;
+            font-family: 'Foldit', cursive;
+            position: absolute;
+            margin-top: 0.1vh;
+            margin-left: 5vh;
+            cursor: default;
+            text-shadow: 5px -5px 3px black;
+        }
+
+
+        img {
+            height: 90px;
+            position: absolute;
+            margin-left: 72vh;
+        }
+
+        li {
+            position: absolute;
+            font-weight: 800;
+            font-size: 5vh;
+            font-family: cursive;
+        }
+        .list {
+            margin-left: 110vh;
+            margin-top: 3vh;
+
+        }
+
+        .list1 {
+            margin-left: 140vh;
+            margin-top: 3vh;
+        }
+
+        .list2 {
+            margin-left: 175vh;
+            margin-top: 3vh;
+        }
+
+   
+
+
+
+
+        a:hover {
+            color: yellow;
+            text-shadow: 2px 3px 10px blue;
+            
+            position: absolute;
+        }
+
+        h1{
+            margin-top: 100px;
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: 3px red underline;
+            animation: about 3s 1  ;
+        }
+        @keyframes about {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        h2{
+            margin-top:30px   ;
+            margin-left: 100px;
+        }
+                  .dak{
+               background-color:black;
+                      color:blue;
+                      
+           }
+           .red{
+            color: white;
+                filter: drop-shadow(-7px 6px 10px rgb(107, 4, 4));
+           }
+           .ok{
+            background-color: black;
+           }
+           .no{
+            color: rgb(236, 132, 132);
+           }
+           #btn{
+            border: solid 2px black;
+            position: relative;
+            left: 1260px;
+            top: 70px;
+           }
+           .raam{
+            text-shadow: 3px 5px 4px wheat;
+           }
+           .color{
+            color: red;
+           }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li class="Saurav" id="ram">SAURAV ARYAL</li>
+                <li><a href="index.html"><img src="s7s-logo-1072619136.png" alt=""></a></li>
+                <li class="list"><a href="index.html">Home</a></li>
+                <li class="list1"><a href="contact.html " target="_parent">Contact</a></li>
+                <li class="list2"><a href="about.html" target="_parent">About</a></li>
+                  <button id="btn">Dark mode</button>
+  
+            </ul>
+        </nav>
+    </div>
+    <h1>My Details</h1>
+    <h2>– Name: Saurav Raj Aryal</h2>
+    <h2>– Class: 11</h2>
+    <h2>– Faculty: Science</h2>
+    <h2>– Date OF Birth: 2064/07/07 BS</h2>
+    <h2>– Age: 16</h2>
+    <h2>– Gender: Male</h2>
+    <h2>– Status: Unmarried</h2>
+    <h2>– Mother: Sita Aryal</h2>
+    <h2>– Father: Gopal Aryal</h2>
+    <h2>– Gmail: aryalsaurav111@gmail.com</h2>
+    <h2>– Permanent Adress: Thakre-5,Dhading</h2>
+    <h2>– Temporary Adress: Kalanki-14,Kathmandu</h2>
+</body>
+<script>
+    let btn=document.getElementById("btn")
+  
+let body=document.body;
+let ram=document.getElementById("ram")
+    btn.addEventListener("click",()=>{ 
+body.classList.toggle("ok")
+ram.classList.toggle("raam")
+body.classList.toggle("color")
+
+    })
+   </script>
+
+</html>
